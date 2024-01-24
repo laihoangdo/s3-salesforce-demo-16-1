@@ -1,0 +1,113 @@
+<template>
+  <div class={headerBooking}>
+    <div class={bookingClass}>
+      <div class="menu">
+        <nav class="menu-toggle" onclick={handleShowMenu}>
+        <lightning-icon
+        class="menu-toggle-icon icon-menu-show"
+        icon-name="utility:justify_text"
+        size="x-small">
+        </lightning-icon> 
+        <lightning-icon
+        class="menu-toggle-icon icon-menu-close"
+        icon-name="utility:close"
+        size="x-small">
+        </lightning-icon> 
+        </nav>
+        <nav>OUR HOTEL</nav>
+        <nav>NEIGHBOURHOOD</nav>
+        <nav>OFFERS</nav>
+        <nav>MEET</nav>
+        <nav>ROOMS</nav>
+        <nav class="logo">
+          <img
+            id="logo-menu"
+            src={logoSrc}
+          />
+        </nav>
+        <nav class="menu-item-have-sub">
+          <p>DINNING</p>
+          <lightning-icon
+            class="booking-hotel-icon"
+            icon-name="utility:chevrondown"
+            size="x-small"
+          ></lightning-icon>
+          <div class="sub-menu">
+            <p>ALL DAY DINNING KAGARIBI</p>
+            <p>PRIVATE DINNING</p>
+          </div>
+        </nav>
+        <nav class="menu-item-have-sub">
+          <p>WELLNESS</p>
+          <lightning-icon
+            class="booking-hotel-icon"
+            icon-name="utility:chevrondown"
+            size="x-small"
+          ></lightning-icon>
+          <div class="sub-menu">
+            <p>SPA</p>
+            <p>SPA ITEMS</p>
+          </div>
+        </nav>
+        <nav>ACCESS</nav>
+        <nav class="menu-item-have-sub menu-language">
+          <p>EN</p>
+          <lightning-icon
+            class="booking-hotel-icon"
+            icon-name="utility:chevrondown"
+            size="x-small"
+          ></lightning-icon>
+          <div class="sub-menu">
+            <p>JP</p>
+            <p>简体中文</p>
+            <p>繁體中文</p>
+          </div>
+        </nav>
+        <nav>
+          <button>BOOK NOW</button>
+        </nav>
+      </div>
+    </div>
+    <div class={menuResponsive}>
+      <nav>OUR HOTEL</nav>
+      <nav>NEIGHBOURHOOD</nav>
+      <nav>OFFERS</nav>
+      <nav>MEET</nav>
+      <nav>ROOMS</nav>
+      <nav class="menu-item-have-sub-responsive">
+        <input type="checkbox" id="check-dinning">
+        <label class="item" for="check-dinning">
+        <p>DINNING</p>
+        <lightning-icon
+          class="booking-hotel-icon"
+          icon-name="utility:chevrondown"
+          size="x-small"
+          onclick={handleClickSubMenu}
+        ></lightning-icon>
+      </label>
+        <div class="sub-menu">
+          <p>All Day Dinning Kagaribi</p>
+          <p>Private Dinning</p>
+        </div>
+      </nav>
+      <nav class="menu-item-have-sub-responsive">
+        <input type="checkbox" id="check-wellness">
+        <label class="item" for="check-wellness">
+        <p>WELLNESS</p>
+          <lightning-icon
+            class="booking-hotel-icon"
+            icon-name="utility:chevrondown"
+            size="x-small"
+            >
+          </lightning-icon>
+        </label>
+        <div class="sub-menu">
+          <p>Spa</p>
+          <p>Spa Items</p>
+        </div>
+      </nav>
+      <nav>ACCESS</nav>
+      <button>BOOK NOW</button>
+    </div>
+  </div>
+</template>
