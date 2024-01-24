@@ -1,0 +1,83 @@
+<template>
+    <div class="group-btn">
+        <div class="btn">
+          <span>See details</span>
+        </div>
+      </div>
+    <div class="room-detail-container">
+        <div class="room-detail">
+          <div class="room-detail-section">
+            <div class="slider-container">
+              <div class="common-slider">
+                  <img
+                  src={imageUrl1}
+                  alt="hotel0-c"
+                  class="slider-item slider-item-noactive"
+                  />
+                  <img
+                  src={imageUrl2}
+                  alt="hotel10-c"
+                  class="slider-item slider-item-active"
+                  />
+                  <img
+                  src={imageUrl3}
+                  alt="hotel20-c"
+                  class="slider-item slider-item-noactive"
+                  />
+              </div>
+  
+              <div class="dotted-detail">
+                <span class="dotted-d active"></span>
+                <span class="dotted-d"></span>
+                <span class="dotted-d"></span>
+              </div>
+  
+              <div class="btn-option">
+                <div class="swiper-btn-left-detail">
+                  <span>
+                    <lightning-icon class="color-white" size="medium" icon-name="utility:chevronleft" title="Approved"></lightning-icon>
+                  </span>
+                </div>
+                <div class="swiper-btn-right-detail">
+                  <span>
+                    <lightning-icon class="color-white" size="medium" icon-name="utility:chevronright" title="Approved"></lightning-icon>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <!-- Infor container -->
+            <div class="infor-container">
+              <div class="infor-section">
+                <div class="heading">
+                  <div class="title">KAGARIBI - TERRACE</div>
+                  <div class="specifications">
+                    <div class="flex-specification">
+                      <div class="capacity">
+                        <span>Capacity : 50</span>
+                      </div>
+                      <div class="line"></div>
+                      <div class="size">
+                        <div>
+                          Size: <span>120m<sup>2</sup></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sub-title">
+                    <h3>Outdoor Terrace: Private Lounge Experience</h3>
+                  </div>
+                </div>
+                <div class="body-content">
+                  <p>Experience our exclusive outdoor terrace, perfect for meals and meetings. Immerse yourself in the inviting ambiance of our private lounge on the 2nd floor, <br /> where comfort meets functionality.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="absolute-icon">
+          <span class="custom-icon" id="close-icon">
+            <lightning-icon class="color-white" size="medium" icon-name="utility:close" title="Approved"></lightning-icon>
+          </span>
+        </div>
+      </div>
+</template>

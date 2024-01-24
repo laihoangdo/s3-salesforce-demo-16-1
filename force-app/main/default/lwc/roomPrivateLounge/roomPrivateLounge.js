@@ -2,8 +2,6 @@ import { LightningElement } from 'lwc';
 import IMAGES from '@salesforce/resourceUrl/RoomImages'
 export default class SectionRoom1 extends LightningElement {
     imageUrl1 = IMAGES + '/4J9A4133-min.jpeg'
-    imageUrl2 = IMAGES + '/4J9A4133-min.jpeg'
-    imageUrl3 = IMAGES + '/4J9A4133-min.jpeg'
 
     renderedCallback() {
         const listImagae = this.template.querySelectorAll(".child_image");
