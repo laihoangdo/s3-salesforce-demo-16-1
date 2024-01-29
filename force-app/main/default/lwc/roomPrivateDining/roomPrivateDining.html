@@ -1,0 +1,91 @@
+<template>
+    <main class="container">
+        <!-- silder 1 -->
+        <div class="container__child">
+          <div class="flex-container">
+            <div class="left-content">
+              <h1>KAGARIBI - PRIVATE DINING SPACE</h1>
+              <h3>Exclusive private dining room</h3>
+              <div class="group-icon">
+                <div class="group-icon__child">
+                  <div class="user__detail">
+                    <span>
+                        <lightning-icon size="x-small" icon-name="utility:people" title="Approved"></lightning-icon> 
+                    </span>
+                    <span class="user__detail-content">50</span>
+                  </div>
+                  <div class="user__detail-middle"></div>
+                  <div class="user__detail">
+                    <span>
+                        <lightning-icon size="x-small" icon-name="utility:expand" title="Approved"></lightning-icon>
+                    </span>
+                    <span class="user__detail-content">120m<sup>2</sup></span>
+                  </div>
+                </div>
+              </div>
+              <div class="paragraph">
+                <p>
+                  During the day, KAGARIBI's private dining room can be used for
+                  galleries and small meetings. Unique as an event space, this is
+                  a unique setting with the quality and serenity of a private
+                  holiday home. This space allows you to focus on your meeting or
+                  event and enjoy the natural energy of Karuizawa while escaping
+                  the hustle and bustle of the city. Visit the space that
+                  transforms your event into a memorable occasion.
+                </p>
+              </div>
+              <!-- <div class="group-btn">
+                <div class="btn">
+                  <span>See details</span>
+                </div>
+              </div> -->
+              <c-room-detail-component></c-room-detail-component>
+            </div>
+            <div class="right-content">
+              <div class="relative">
+                <div class="right__content-option">
+                  <div class="right__content-img">
+                    <div class="child_image">
+                      <img
+                        src={imageUrl1}
+                        alt="image"
+                      />
+                    </div>
+                    <div class="child_image">
+                      <img
+                        src={imageUrl2}
+                        alt="image"
+                      />
+                    </div>
+                    <div class="child_image">
+                      <img
+                        src={imageUrl3}
+                        alt="image"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="btn-option">
+                  <div class="swiper-btn-left">
+                    <span style="color: #fff;">
+                        <lightning-icon class="color-white" size="medium" icon-name="utility:chevronleft" title="Approved"></lightning-icon>
+                    </span>
+                  </div>
+                  <div class="swiper-btn-right">
+                    <span style="color: #fff;">
+                        <lightning-icon class="color-white" size="medium" icon-name="utility:chevronright" title="Approved"></lightning-icon>
+                    </span>
+                  </div>
+                </div>
+                <div class="dotted-absolute">
+                  <span class="dotted active"></span>
+                  <span class="dotted"></span>
+                  <span class="dotted"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Detail -->
+      </main>
+</template>

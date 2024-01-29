@@ -1,0 +1,294 @@
+.room-detail-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .8);
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 400ms ease-out;
+  }
+  
+  .room-detail-container.show {
+    opacity: 1;
+    visibility: visible;
+    transition: all 400ms ease-out;
+    
+  }
+  
+  .room-detail {
+   width: 100%;
+   height: auto;
+   display: flex;
+   padding: 0 32px;
+   justify-content: center;
+  }
+  
+  .room-detail-section {
+    overflow-x: hidden;
+    overflow-y: auto;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    background: white;
+  }
+  
+  .slider-container {
+    padding-top: 40px;
+    padding-bottom: 24px;
+    height: 550px;
+    position: relative;
+    
+  }
+  
+  .common-slider {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+    transition: all 100ms ease-out;
+  }
+  
+  .slider-item-noactive {
+    height: 80%;
+    /* height: 100%; */
+  }
+  
+  .slider-item {
+    /* flex: 1; */
+    margin: 0 30px;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .slider-item-active {
+    flex-basis: 750px;
+    height: 100%;
+  }
+  .btn-option {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    height: 100%;
+  }
+  
+  .absolute-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+  }
+  
+  .custom-icon {
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    font-size: 30px;
+    color: white;
+  }
+  
+  .infor-container {
+    padding: 0 64px 48px;
+  }
+  
+  .infor-section {
+    background: rgba(156,191,184, 1);
+    width: 100%;
+    padding: 24px;
+    color: white;
+    font-size: 18px;
+  }
+  
+  .heading .title {
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    font-size: 35px;
+    line-height: 42px;
+    letter-spacing: .53px;
+    color: white;
+  }
+  
+  .specifications {
+    margin-bottom: 24px;
+  }
+  
+  .flex-specification {
+    display: flex;
+    align-items: center;
+  }
+  
+  .capacity, .size {
+    display: flex;
+    color: white;
+    align-items: center;
+  }
+  
+  .capacity > * {
+    font-size: 18px;
+  }
+  
+  .size > * {
+    font-size: 18px;
+  }
+  
+  .line {
+    height: 20px;
+    width: 1px;
+    margin: 0 24px;
+    background: white;
+  }
+  
+  .sub-title {
+    margin-top: 24px;
+    margin-bottom: 16px;
+    color: white;
+    font-size: 22px;
+    line-height: 27px;
+    letter-spacing: .33px;
+  }
+  
+  .dotted-detail {
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  
+  
+  .dotted-d {
+    margin: 5px;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 1px solid rgba(156,191,184, 1);
+    cursor: pointer;
+    transition: all 1000ms;
+  }
+  
+  .dotted-d.active {
+    background: rgba(156,191,184, 1) !important;
+  }
+  
+  .body-content {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    width: 100%;
+  }
+  
+  .swiper-btn-left-detail {
+      position: absolute;
+      height: 100%;
+      left: 20px;
+      z-index: 2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .swiper-btn-right-detail {
+    position: absolute;
+    height: 100%;
+    right: 20px;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-btn-left-detail span,
+  .swiper-btn-right-detail span {
+    cursor: pointer;
+    font-size: 35px;
+    color: white;
+  }
+
+  .group-btn {
+    margin-top: 24px;
+}
+
+.btn {
+    max-width: 150px;
+    text-align: center;
+    border: 1px solid white;
+    text-transform: uppercase;
+    cursor: pointer;
+    
+}
+
+.btn span {
+    width: 100%;
+    display: inline-block;
+    height: 100%;
+    padding: 12px 20px;
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: 0;
+    text-decoration: none;
+    background: initial;
+    color: white;
+    font-weight: 600;
+    transition: all .4s linear;
+}
+
+.btn:hover {
+    color: white;
+    background: #03330e;
+    border: 1px solid transparent;
+}
+
+  @media screen and (max-width: 1200px) {
+    .infor-container {
+      padding: 0;
+    }
+    .slider-container {
+      height: 300px;
+    }
+    .slider-item-noactive {
+      height: 90%;
+      
+    }
+    .slider-item-active {
+      height: 100%;
+      
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .slider-item {
+      margin: 0;
+    }
+    .slider-item-noactive {
+      height: 90%;
+    }
+    .slider-item-active {
+     width: 100%;
+     flex-shrink: 0;
+    }
+  }
+
+  @media screen and (max-width: 640px) {
+    .room-detail-section::-webkit-scrollbar {
+      display: none;
+    }
+    .room-detail-section {
+      max-width: 100%;
+      width: 100%;
+    }
+    .slider-item {
+      margin: 0;
+    }
+    .slider-item-noactive {
+      height: 90%;
+    }
+    .slider-item-active {
+     width: 100%;
+     flex-shrink: 0;
+    }
+  }
