@@ -1,0 +1,17 @@
+.filter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.filter__item{
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid;
+    cursor: pointer;
+}
+
+.tab{
+    width: 100%;
+}

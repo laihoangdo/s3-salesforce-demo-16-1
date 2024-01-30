@@ -5,4 +5,8 @@ export default class Hero extends LightningElement {
   @api title;
   @api sub_title;
   @api description
+
+  get backgroundStyle(){
+    return `background-image: url(${this.image})`
+  }
 }

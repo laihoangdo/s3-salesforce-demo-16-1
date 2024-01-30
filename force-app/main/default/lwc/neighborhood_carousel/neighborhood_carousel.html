@@ -1,5 +1,5 @@
 <template>
-    <c-slide_carousel displayed-number="5" list={list} onmounted={mounted} onnext={next} onprev={prev}>
+    <c-slide_carousel displayed-number="5" able_change_number_displayed="3" list={list} onmounted={mounted} onnext={next} onprev={prev}>
       <div class="carousel" lwc:ref="carousel">
         <article class="card" for:each={displayed} for:item="item" key={item.id}>
           <figure class="card__image">

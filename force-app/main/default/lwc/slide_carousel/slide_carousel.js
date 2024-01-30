@@ -3,6 +3,7 @@ import { LightningElement, api } from 'lwc';
 export default class Neighborhood_carousel extends LightningElement {
   @api list
   @api displayedNumber
+  @api able_change_number_displayed
   changePositionCount = 0
 
   newEvent(nameEvent, detail){
