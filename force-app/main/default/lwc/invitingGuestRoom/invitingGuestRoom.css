@@ -1,0 +1,279 @@
+@font-face {
+    font-family: 'Beausite Grand';
+    src: url("/resources/FontFamily/Font/BeausiteSlickTrial-Regular-BF6424edbe7f34c.otf");
+}
+
+
+* {
+    transition: all 500ms linear;
+    font-family: 'Beausite Grand', sans-serif;
+}
+/* .content {
+    --tw-bg-opacity: 1;
+    background: rgba(244,244,241,var(--tw-bg-opacity));
+} */
+.intro-size {
+    max-width: 1440px;
+    width: 100%;
+    margin: 40px auto;
+}
+
+.container-intro {
+    margin: 0 auto;
+}
+
+.heading {
+    font-size: 35px;
+    line-height: 42px;
+    letter-spacing: .53px;
+    color: rgba(11,42,35,1);
+    text-align: center;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+.sub-title {
+    font-size: 22px;
+    line-height: 27px;
+    letter-spacing: .33px;
+    --tw-text-opacity: 1;
+    color: rgba(156,191,184,var(--tw-text-opacity));
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 24px;
+}
+
+.description {
+    font-size: 15px;
+        line-height: 23px;
+        letter-spacing: 0;
+    --tw-text-opacity: 1;
+    text-align: center;
+    color: rgba(11,42,35,var(--tw-text-opacity));
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.inline-booking-wrapper {
+    max-width: 1440px;
+    margin: 0 16px;
+    padding: 40px 0;
+    --tw-bg-opacity: 1;
+    background-color: rgba(156,191,184,var(--tw-bg-opacity));
+}
+
+.size-inline-booking {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.container-inline-booking {
+    width: 100%;
+    padding: 0 16px;
+    margin: 0 auto;
+}
+
+.flex-inline-booking {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo-inline-booking {
+    display: flex;
+    width: 100%;
+    padding: 0 16px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 24px;
+}
+
+.logo-inline-booking img {
+    max-width: 100px;
+    margin: 0 auto;
+    object-fit: contain;
+
+}
+
+.form-inline-booking {
+    width: 100%;
+    padding: 0 16px;
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 -16px;
+}
+
+.form > div:first-child {
+    flex: auto;
+    width: 50%;
+    margin-bottom: 24px;
+    padding: 0 16px;
+
+}
+.form > div:nth-child(2) {
+    flex: auto;
+    width: 50%;
+    margin-bottom: 24px;
+    padding: 0 16px;
+}
+.form > div {
+    flex: auto;
+    width: 33.3333%;
+    margin-bottom: 24px;
+    padding: 0 16px;
+
+}
+
+.form > div label {
+    font-size: 12px;
+    line-height: 27px;
+    letter-spacing: 0;
+    color: white;
+    margin-bottom: 0;
+    display: block;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.form > div input {
+    background: transparent;
+    color: white;
+    font-size: 18px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    border-bottom: 1px solid white;
+    padding: 16px 0;
+    outline: none;
+}
+.form > div input:focus {
+    outline: none;
+}
+
+.form > div input[type='date'] {
+    position: relative;
+}
+.form > div:last-child {
+    flex: auto;
+    padding: 0 16px;
+    margin-top: 16px;
+    text-align: center;
+}
+
+.form > div:last-child button {
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    padding: 12px 16px;
+    min-width: 150px;
+    text-transform: uppercase;
+    transition: all 500ms cubic-bezier(.4,0,.2,1);
+    color: white;
+    --tw-bg-opacity: 1;
+    background-color: rgba(11,42,35,var(--tw-bg-opacity));
+    --tw-border-opacity: 1;
+    border: 1px solid rgba(0,46,82,var(--tw-border-opacity));
+}
+
+.form > div:last-child button:hover {
+    background: transparent;
+    border: 1px solid white;
+}
+
+.form > div input[type="date"]::-webkit-calendar-picker-indicator {
+    background: transparent;
+    bottom: 0;
+    color: transparent;
+    cursor: pointer;
+    height: auto;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+}
+
+@media screen and (min-width: 1200px) {
+    .intro-size {
+        margin: 80px auto;
+    }
+    .heading {
+    font-size: 70px;
+    line-height: 77px;
+    letter-spacing: 3px;
+    }
+    .sub-title {
+        font-size: 32px;
+    line-height: 47px;
+    letter-spacing: 1.5px;
+    }
+    .description {
+        font-size: 16px;
+    line-height: 27px;
+    letter-spacing: 0;
+    }
+    .inline-booking-wrapper {
+        margin: 0 auto;
+    }
+    .container-inline-booking {
+        padding: 0 56px;
+    }
+    .flex-inline-booking {
+        flex-wrap: nowrap;
+    }
+
+    .logo-inline-booking {
+        width: 16.666667%;
+        margin-bottom: 0;
+    }
+    .form-inline-booking {
+        width: 83.33333%;
+    }
+    .form {
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+    .form > div:first-child {
+        width: auto;
+        margin-bottom: 0;
+    }
+    .form > div:nth-child(2) {
+        width: auto;
+        margin-bottom: 0;
+    }
+
+    .form > div {
+        width: auto;
+        margin-bottom: 0px;
+    }
+    .form > div:last-child {
+        text-align: left;
+        margin-top: 0;
+    }
+    .form > div label {
+        text-align: left;
+        font-size: 16px;
+        line-height: 27px;
+        letter-spacing: 0;
+        margin-bottom: 16px;
+    }
+    .form > div input {
+        text-align: left;
+        border: none;
+    }
+
+    .logo-inline-booking img {
+        max-width: 100%;
+        margin: 0;  
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .intro-size {
+        margin: 80px auto;
+    }
+    
+}
