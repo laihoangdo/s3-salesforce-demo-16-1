@@ -1,0 +1,57 @@
+.input-booking-hotel {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    margin-bottom: 40px;
+  }
+  .input-booking-hotel p {
+    margin-bottom: 15px;
+  }
+  .input-booking-hotel input {
+    font-weight: 300;
+    color: white;
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    padding-bottom: 8px;
+  }
+  .input-booking-hotel .number {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+  }
+  .input-booking-hotel .number input {
+    text-align: center;
+    border: none;
+  }
+  .input-booking-hotel .number p {
+    cursor: pointer;
+  }
+  .input-booking-hotel .number input:focus {
+    outline: none;
+  }
+  .input-booking-hotel input:focus {
+    outline: none;
+  }
+  .input-booking-hotel
+    input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+  }
+  .input-booking-hotel .select-option{
+    width: 100%;
+    display: grid;
+    place-items: center;
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+  }
+  .input-booking-hotel .select-option select{
+    background-color: transparent;
+    border: none;
+    outline: none;
+  }
+  .input-booking-hotel .select-option select option{
+    background-color: rgba(0, 46, 82, 1);
+  }
