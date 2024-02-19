@@ -1,0 +1,45 @@
+<template>
+    <div class={statusModal}>
+        <div class="modal">
+          <lightning-icon
+          class="btn-close"
+          icon-name="utility:close"
+          size="x-small" onclick={close}>
+          </lightning-icon> 
+          <p class="title-modal">BOOK NOW</p>
+          <div class="form-item">
+            <div class="form-item-menu">
+              <p class={classRoom} onclick={changeTagRoom}>ROOM</p>
+              <p class={classTable} onclick={changeTagTable}>TABLE</p>
+            </div>
+            <div class="form-item-content">
+              <template if:true={isRoom}>
+              <div class="item-form">
+                <c-input-form-booking-now title="CHECK-IN" type = "date" onsetvalue={changeValueCheckIn} value={form.room.check_in} style="flex: 1;"></c-input-form-booking-now>
+                <c-input-form-booking-now title="CHECK-OUT" type = "date"  onsetvalue={changeValueCheckOut} value={form.room.check_out} style="flex: 1;margin-left: 30px;"></c-input-form-booking-now>
+              </div>
+              <div class="item-form">
+                <c-input-form-booking-now title="ROOM" type = "number" onsetvalue={changeValueRoom} value={form.room.room} style="flex: 1"></c-input-form-booking-now>
+              </div>
+              <div class="item-form">
+                <c-input-form-booking-now title="ADULT" type = "number"  onsetvalue={changeValueAdult} value={form.room.adult} style="flex: 1;"></c-input-form-booking-now>
+                <c-input-form-booking-now title="CHILDREN" type = "number" onsetvalue={changeValueChildren} value={form.room.children}  style="flex: 1;margin-left: 30px;"></c-input-form-booking-now>
+              </div>
+              </template>
+              <template if:true={isTable}>
+                <div class="item-form">
+                  <c-input-form-booking-now title="DATES" type = "date" onsetvalue={changeValueDates} value={form.table.dates} style="flex: 1;"></c-input-form-booking-now>
+                </div>
+                <div class="item-form">
+                  <c-input-form-booking-now title="TIME" type = "time" onsetvalue={changeValueTime} value={form.table.time} style="flex: 1"></c-input-form-booking-now>
+                </div>
+                <div class="item-form">
+                  <c-input-form-booking-now title="GUESTS" type = "number" onsetvalue={changeValueGuests} value={form.table.guests} style="flex: 1;"></c-input-form-booking-now>
+                </div>
+              </template>
+            </div>
+            <button class="btn-submit">CHECK AVAILABILITY</button>
+          </div>
+        </div>
+      </div>
+</template>
