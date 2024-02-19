@@ -1,0 +1,201 @@
+<template>
+    <div class="content">
+        <div class="intro">
+            <div class="size-room-detail">
+                <div class="container-size">
+                    <div class="content-size">
+                        <!-- Title -->
+                        <div class="title">
+                            <p>{title}</p>
+                        </div>
+                        <!-- Sub title -->
+                        <div class="sub-title">
+                            <p>{subTitle}</p>
+                        </div>
+                        <!-- banner image -->
+                        <div class="content-image">
+                            <div>
+                                <img src={imageUrl} alt="img">
+                            </div>
+                        </div>
+                        <!-- Description -->
+                        <div class="description">
+                            <!-- <template lwc:if={suite}>
+                                <p for:each={newArrDescription} for:item="description" key={description}>
+                                    {description}
+                                </p>
+                            </template> -->
+                            <p>{description}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="amenities">
+            <div class="hotel-amenities">
+                <section class="amenities-item">
+                    <div class="size-room-detail">
+                        <div class="container-size">
+                            <div class="content">
+                                <div class="header-facility">
+                                    <div class="flex-header">
+                                        <div>
+                                            <div class="img">
+                                                <img src={hotelSvgIcon} alt="icon">
+                                            </div>
+                                            <div class="title-svg">HOTEL FACILITIES
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="body-facility">
+                                    <div class="flex-body-facility">
+                                        <div class="item-facility" for:each={listHotelFacility} for:item="facility" key={facility.id}>
+                                            <div class="child-item-facility">
+                                                <img src={facility.icon} alt={facility.alt}>
+                                            </div>
+                                            <div class="title-child-item">{facility.name}</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="hotel-amenities">
+                <section class="amenities-item">
+                    <div class="size-room-detail">
+                        <div class="container-size">
+                            <div class="content">
+                                <div class="header-facility">
+                                    <div class="flex-header">
+                                        <div>
+                                            <div class="img">
+                                                <img src={hotelSvgIcon} alt="icon">
+                                            </div>
+                                            <div class="title-svg">ROOM AMENITIES
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="body-facility">
+                                    <div class="flex-body-facility">
+                                        <div class="item-facility" for:each={listRoomFacility} for:item="facility" key={facility.id}>
+                                            <div class="child-item-facility">
+                                                <img src={facility.icon} alt={facility.alt}>
+                                            </div>
+                                            <div class="title-child-item">{facility.name}</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            
+        </div>
+        <div class="cta">
+            <div class="single-cta">
+                <div class="size-single-cta">
+                    <div class="container-size">
+                        <div class="icon-container">
+                            <div class="icon">
+                                <img src={emptyTray} alt="Empty tray">
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="title-cta">
+                                <p>Book now for a special price!</p>
+                            </div>
+                            <div class="sub-title-cta">
+                                <p>Recharge with a longed-for villa experience</p>
+                            </div>
+                            <div class="btn-cta">
+                                <a href="#" target="_blank">Book now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="related">
+            <div class="size-other-rooms">
+                <div class="container-size">
+                    <div class="header-other-rooms">
+                        <div class="title-other-rooms">
+                            <p>Other rooms</p>
+                        </div>
+                    </div>
+                    <div class="body-other-rooms">
+                        <div class="items-other-rooms">
+                            <c-other-rooms class="item" for:each={otherRooms} for:item="other" key={other.id} img={other.url} title={other.title} sub-title={other.subTitle}></c-other-rooms>
+                        </div>
+                    </div>
+                    <div class="footer-other-rooms">
+                        <div>
+                            <a href="#">View all</a>
+                        </div>
+                    </div>
+                    <section class="special-offer">
+                        <div class="size-special-offer">
+                            <div class="container-size">
+                                <div class="head-special-offer">
+                                        Offers
+                                </div>
+                                <div class="body-special-offer">
+                                    <div class="swiper">
+                                        <div class="grid-swiper">
+                                            <div class="items-grid-swipper">
+                                                <div class="shadow-inner">
+                                                    <div class="content">
+                                                        <div class="img-content">
+                                                            <img src={imgOffers} alt="Image hotel">
+                                                        </div>
+                                                        <div class="text-content">
+                                                            <div class="title-text-content">BOOK EARLY AND SAVE</div>
+                                                            <div class="sub-text-content">
+                                                                Save when you book more than 30 days in advance with breakfast included.  
+                                                            </div>
+                                                            <div class="btn-text-content-offer">
+                                                                <a href="#" class="btn-discover">DISCOVER MORE</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="items-grid-swipper">
+                                                <div class="shadow-inner">
+                                                    <div class="content">
+                                                        <div class="img-content">
+                                                            <img src={imgOffers} alt="Image hotel">
+                                                        </div>
+                                                        <div class="text-content">
+                                                            <div class="title-text-content">BOOK EARLY AND SAVE</div>
+                                                            <div class="sub-text-content">
+                                                                Save when you book more than 30 days in advance with breakfast included.  
+                                                            </div>
+                                                            <div class="btn-text-content-offer">
+                                                                <a href="#" class="btn-discover">DISCOVER MORE</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="footer-special-offer">
+                                    <div class="button">
+                                        <a href="#">View all</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
