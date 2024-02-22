@@ -1,0 +1,30 @@
+.further-content{
+  width: 100%;
+  display: flex;
+  color: white;
+  gap: 2rem
+}
+
+.further:nth-child(even) .further-content{
+  flex-direction: row-reverse;
+}
+
+.further-content .further__info{
+  width: 40%;
+  display:flex;
+  flex-direction: column;
+  font-weight: 600;
+}
+
+.further-content .further__info-title{
+  font-size: 2rem;
+}
+
+.further-content .further__image{
+  width: 60%;
+}
+
+.further-content .further__image-img{
+  width: 100%;
+  object-fit: cover;
+}

@@ -1,0 +1,20 @@
+<template>
+    <c-intro>
+      <c-intro class="further" for:each={information} for:item="information_detail" key={information_detail.id}>
+        <div class="further-content">
+          <section class="further__info">
+            <h4 class="further__info-title">{information_detail.title}</h4>
+            <p class="further__info-detail" for:each={information_detail.detail} for:item="detail_item" key={detail_item.id}>
+              {detail_item.content}
+              <span lwc:if={detail_item.link_page}>
+                <a href={detail_item.link_page}>here</a>
+              </span>
+            </p>
+          </section>
+          <section  class="further__image">
+            <image class="further__image-img" src={information_detail.image} />
+          </section>
+        </div>
+      </c-intro>
+    </c-intro>
+</template>
