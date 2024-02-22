@@ -1,0 +1,9 @@
+<template>
+  <c-slide_carousel style="width: 100%;"  displayed-number="3" able_change_number_displayed="2" list={list} onmounted={mounted} onnext={next} onprev={prev}>
+    <div class="carousel"  lwc:ref="carousel">
+        <figure class="image-box" for:each={displayed} for:item="item" key={item.id}>
+          <img class="image-box__img " src={item.image} />
+        </figure>
+    </div>
+  </c-slide_carousel>
+</template>

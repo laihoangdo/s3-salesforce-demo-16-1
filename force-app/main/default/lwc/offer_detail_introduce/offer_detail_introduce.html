@@ -1,0 +1,23 @@
+<template>
+  <c-intro>
+    <c-offer_detail_category style='width:100%;' list={category}></c-offer_detail_category>
+  </c-intro>
+  <c-intro sub_title={sub_title} description={description}>
+    <p class="avaiable-info">
+      Occupancy:
+      <br/>
+      {occupancy}
+    </p>
+    <p class="avaiable-info">
+      Booking period:
+      <br/>
+      {booking_period}
+    </p>
+    <p class="avaiable-info">
+      Stay period:
+      <br/>
+      {stay_period}
+    </p>
+    <button>BOOK NOW</button>
+  </c-intro>
+</template>
