@@ -1,0 +1,63 @@
+<template>
+    <div class="footer-booking-hotel">
+        <div class="group-img">
+          <template for:each={images} for:item="item" for:index="index">
+            <img key={item.index} class={item.class} src={item.img} />
+          </template>
+        </div>
+        <div class="footer-content">
+          <div class="footer-content-box">
+            <div class="footer-content-box-1">
+              <div class="footer-content-1">
+                <div class="text-1">
+                  <div class="content">
+                    <p>IHG-ANA Hotels Reservations Center：0120-056-658</p>
+                    <p>Hotel Representative：0267-42-1100</p>
+                    <p>E-mail：reservations.hotelindigokaruizawa@ihg.com</p>
+                    <p>FAX: 0267-41-6968</p>
+                  </div>
+                  <div class="content-2">
+                    18-39 Yashikizoe, Nagakura, Karuizawa-machi, Kitasaku-gun,
+                    Nagano 389-0111, Japan 18-39 YASHIKIZOE, NAGAKURA,
+                    KARUIZAWA-MACHI, KITASAKU-GUN, NAGANO 389-0111
+                  </div>
+                </div>
+                <div class="follow">
+                  <p>Follow Us</p>
+                  <div class="img-follow">
+                    <template for:each={imagesFollow} for:item="item" for:index="index">
+                      <img key={item.index} class={item.class} src={item.img} />
+                    </template>
+                  </div>
+                </div>
+              </div>
+              <div class="content-1">
+                <p>PRIVACY POLICY</p>
+                <p>SITEMAP</p>
+                <p>WEBSITE POLICY</p>
+                <p>PRESS RELEASE</p>
+                <p>CONTACT US</p>
+                <p>BROCHURE</p>
+                <p>FAQ</p>
+                <p>CAREER</p>
+                <p>UPDATES</p>
+              </div>
+            </div>
+            <div class="footer-content-2">
+              <div class="text-3">
+                <p>© 2024 - Hotel Indigo Karuizawa. All rights reserved</p>
+                <p>
+                  This hotel is owned by TC Hotels and Resorts Corporation and
+                  operated by IHG ANA Hotels Group Japan LLC.
+                </p>
+              </div>
+              <div class="content-2">
+                <template for:each={imagesContent} for:item="item" for:index="index">
+                  <img key={item.index} class={item.class} src={item.img} />
+                </template>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</template>
