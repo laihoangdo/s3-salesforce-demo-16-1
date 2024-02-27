@@ -1,0 +1,162 @@
+@font-face {
+    font-family: "Beausite Fit Trial Regular";
+    src: url("https://db.onlinewebfonts.com/t/3095024266a6c1b50fa47f00806ee8ad.eot");
+    src: url("https://db.onlinewebfonts.com/t/3095024266a6c1b50fa47f00806ee8ad.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/3095024266a6c1b50fa47f00806ee8ad.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/3095024266a6c1b50fa47f00806ee8ad.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/3095024266a6c1b50fa47f00806ee8ad.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/3095024266a6c1b50fa47f00806ee8ad.svg#Beausite Fit Trial Regular")format("svg");
+  }
+.access-banner{
+    font-family: "Beausite Fit Trial Regular";
+}
+.access-direction {
+  width: 100%;
+  height: auto;
+  display: grid;
+  place-items: center;
+  background-color: rgba(11, 42, 35, 1);
+}
+.access-direction .wrapper {
+  display: flex;
+  max-width: 1440px;
+  padding: 5rem 0;
+  align-items: center;
+  justify-content: center;
+}
+.access-direction .map {
+  flex: 1;
+  height: 512px;
+}
+.access-direction .title {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 45%;
+  padding-left: 8rem;
+  height: 512px;
+  color: white;
+  font-family: "Beausite Fit Trial Regular";
+}
+.access-direction .title .main-title {
+  font-size: 70px;
+  line-height: 77px;
+  letter-spacing: 3px;
+}
+.access-direction .title .sub-title {
+  font-size: 32px;
+  line-height: 47px;
+  letter-spacing: 1.5px;
+}
+.access-direction .title .content {
+  font-size: 16px;
+  line-height: 27px;
+  letter-spacing: 0;
+}
+.access-direction .wrapper .main-title-responsive {
+  display: none;
+}
+
+
+.driving-direction .line-top,
+.taking-the-train-here .line-top,
+.parking .line-top {
+  border-bottom: none;
+  height: 1px;
+  opacity: 0.4;
+  margin: 0;
+  border: none;
+  -webkit-font-smoothing: antialiased;
+}
+.parking .wrapper{
+  margin-bottom: 64px;
+}
+.driving-direction,
+.taking-the-train-here,
+.parking {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  font-family: "Beausite Fit Trial Regular";
+}
+.driving-direction .wrapper,
+.taking-the-train-here .wrapper,
+.parking .wrapper {
+  margin: 56px 0;
+  max-width: 1440px;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.driving-direction .title,
+.taking-the-train-here .title,
+.parking .title {
+  color: rgba(156, 191, 184, 1);
+  font-size: 32px;
+  line-height: 47px;
+  letter-spacing: 1.5px;
+  margin-bottom: 24px;
+}
+.driving-direction .sub-title,
+.taking-the-train-here .sub-title,
+.parking .sub-title {
+  text-align: center;
+  color: rgba(11, 42, 35, 1);
+  font-size: 16px;
+  line-height: 27px;
+  letter-spacing: 0;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .access-direction .wrapper {
+    align-items: flex-start;
+  }
+  .access-direction .wrapper .main-title-responsive {
+    display: block;
+    font-size: 35px;
+    line-height: 42px;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    letter-spacing: 0.53px;
+    color: white;
+    text-align: left;
+    font-family: "Beausite Fit Trial Regular";
+  }
+  .access-direction .wrapper {
+    flex-direction: column;
+    padding: 0 1rem;
+    padding-bottom: 4rem;
+    max-width: 768px;
+  }
+  .access-direction .map {
+    flex: none;
+    width: 100%;
+    height: 300px;
+  }
+  .access-direction .title {
+    flex: none;
+    width: 100%;
+    height: fit-content;
+    max-width: none;
+    padding-left: 0;
+  }
+  .access-direction .title .main-title {
+    display: none;
+  }
+  .access-direction .title .sub-title {
+    margin-top: 3.5rem;
+    font-size: 22px;
+    line-height: 27px;
+    letter-spacing: 0.33px;
+  }
+  .access-direction .title .content {
+    font-size: 15px;
+    line-height: 23px;
+    letter-spacing: 0;
+    margin: 1.5rem 0;
+  }
+}
