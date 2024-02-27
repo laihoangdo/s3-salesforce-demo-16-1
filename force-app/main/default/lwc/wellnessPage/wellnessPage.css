@@ -1,0 +1,75 @@
+@font-face {
+  font-family: "Beausite Fit Trial Regular";
+  src: url("https://db.onlinewebfonts.com/t/3095024266a6c1b50fa47f00806ee8ad.eot");
+  src: url("https://db.onlinewebfonts.com/t/3095024266a6c1b50fa47f00806ee8ad.eot?#iefix")format("embedded-opentype"),
+  url("https://db.onlinewebfonts.com/t/3095024266a6c1b50fa47f00806ee8ad.woff2")format("woff2"),
+  url("https://db.onlinewebfonts.com/t/3095024266a6c1b50fa47f00806ee8ad.woff")format("woff"),
+  url("https://db.onlinewebfonts.com/t/3095024266a6c1b50fa47f00806ee8ad.ttf")format("truetype"),
+  url("https://db.onlinewebfonts.com/t/3095024266a6c1b50fa47f00806ee8ad.svg#Beausite Fit Trial Regular")format("svg");
+}
+.wellness-banner{
+  font-family: "Beausite Fit Trial Regular";
+}
+.wellness-page{
+width: 100%;
+height: auto;
+display: grid;
+place-items: center;
+}
+.wellness-page .wrapper {
+display: flex;
+max-width: 1440px;
+width: 100%;
+padding: 5rem 0;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+.spa, .communal,.fitness {
+width: 100%;
+}
+.wellness-page .wrapper p{
+text-align: center;
+}
+.spa .main-title, .communal .main-title,.fitness .main-title{
+color: rgba(11, 42, 35,1);
+font-size: 70px;
+line-height: 77px;
+letter-spacing: 3px;
+}
+.spa .sub-title, .communal .sub-title,.fitness .sub-title{
+font-size: 32px;
+line-height: 47px;
+letter-spacing: 1.5px;
+color: rgba(156, 191, 184, 1);
+}
+.spa .content, .communal .content, .fitness .content{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+} 
+.spa .content .title, .communal .content .title,.fitness .content .title{
+font-size: 36px;
+line-height: 42px;
+letter-spacing: .53px;
+color: rgba(11, 42, 35, 1);
+margin-bottom: 30px;
+text-transform: uppercase;
+}
+.spa .content p:not(.title), .communal .content p:not(.title),.fitness .content p:not(.title){
+font-size: 16px;
+line-height: 27px;
+letter-spacing: 0;
+color: rgba(11, 42, 35, 1);
+max-width: 800px;
+}
+.spa .content button, .communal .content button,.fitness .content button{
+font-size: 20px;
+line-height: 27px;
+letter-spacing: 0;
+color: rgba(11, 42, 35, 1);
+padding: 10px;
+border: 1px solid rgba(11, 42, 35, 1);
+margin-top: 30px;
+}
