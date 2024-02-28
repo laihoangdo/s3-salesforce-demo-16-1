@@ -1,0 +1,99 @@
+<template>
+    <main class={container}>
+        <!-- silder 1 -->
+        <div class="container__child">
+          <div class={flexContainer}>
+            <div class="left-content">
+              <h1>{title}</h1>
+              <h3>{subTitle}</h3>
+              <div class="group-icon">
+                <div class="group-icon__child">
+                  
+                    <div class="user__detail" lwc:if={meetPage}>
+                        <span>
+                            <lightning-icon size="x-small" icon-name="utility:people" title="Approved"></lightning-icon> 
+                        </span>
+                        <span class="user__detail-content">{people}</span>
+                    </div>
+                    <div class="user__detail" lwc:else>
+                        
+                            <span class="user__detail">
+                                <span>
+                                    <lightning-icon size="x-small" icon-name="utility:user" title="User"></lightning-icon> 
+                                </span>
+                                <span class="user__detail-content">1</span>
+                            </span>
+                            <span>or</span>
+                            <span class="user__detail">
+                                <span>
+                                    <lightning-icon size="x-small" icon-name="utility:people" title="People"></lightning-icon> 
+                                </span>
+                                <span class="user__detail-content">2</span>
+                            </span>
+                       
+                    </div>
+                    
+                 
+                  <div class="user__detail-middle"></div>
+                  <div class="user__detail">
+                    <span>
+                        <lightning-icon size="x-small" icon-name="utility:expand" title="Approved"></lightning-icon>
+                    </span>
+                    <span class="user__detail-content">{area}<sup>2</sup></span>
+                  </div>
+                </div>
+              </div>
+              <div class="paragraph">
+                <p>
+                  {description}
+                </p>
+              </div>
+              <template lwc:if={cDetail}>
+                <c-room-detail-component></c-room-detail-component>
+              </template>
+              <template lwc:else>
+                  <div class="group-btn">
+                      <div class="btn">
+                          <span>See details</span>
+                        </div>
+                    </div>
+                </template>
+            </div>
+            <div class={rightContent}>
+              <div class="relative">
+                <div class="right__content-option">
+                  <div class="right__content-img">
+                    <div class="child_image" for:each={listImages} for:item="image" key={image.id}>
+                            <img
+                              src={image.src}
+                              alt={image.alt}
+                            />
+                        </div>
+                  </div>
+                </div>
+                <div class="btn-option">
+                  <div class="swiper-btn-left">
+                    <span style="color: #fff;">
+                        <lightning-icon class="color-white" size="medium" icon-name="utility:chevronleft" title="Approved"></lightning-icon>
+                    </span>
+                  </div>
+                  <div class="swiper-btn-right">
+                    <span style="color: #fff;">
+                        <lightning-icon class="color-white" size="medium" icon-name="utility:chevronright" title="Approved"></lightning-icon>
+                    </span>
+                  </div>
+                </div>
+                <template lwc:if={dotted}>
+                    <div class="dotted-absolute">
+                        <span class="dotted active"></span>
+                        <span class="dotted"></span>
+                        <span class="dotted"></span>
+                    </div>
+                </template>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Detail -->
+      </main>
+</template>
