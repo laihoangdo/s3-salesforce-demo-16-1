@@ -1,0 +1,16 @@
+<template>
+    <c-intro>
+        <c-tab style="width: 100%;" tabs={tabs} change_tab_func={changeTabFunc} onchangetab={handleChangeTab}>
+            <h1 class="title">{tabTitle}</h1>
+            
+            <c-slide_carousel displayed-number="5" list={tabContents} able_change_number_displayed="4" onmounted={mounted} onnext={next} onprev={prev} lwc:if={tabContents.length}> 
+                <div class="tab able" lwc:ref="tab" lwc:if={visible}>
+                    <c-offer_card_content class="card" for:each={displayed} for:item="content" key={content.link_detail} image={content.image} title={content.title} description={content.description}></c-offer_card_content>
+                </div>
+                <div class="tab unable" lwc:ref="tab" lwc:else>
+                    <c-offer_card_content class="card" for:each={displayed} for:item="content" key={content.link_detail} image={content.image} title={content.title} description={content.description}></c-offer_card_content>
+                </div>
+            </c-slide_carousel>
+        </c-tab>
+    </c-intro>
+</template>
