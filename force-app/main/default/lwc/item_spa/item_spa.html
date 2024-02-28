@@ -1,0 +1,8 @@
+<template>
+    <img class="item-spa-img" src={img} alt="img-spa-item"/>
+    <p class="item-spa-title">{title}</p>
+    <template if:true={cost}>
+        <p class="item-spa-cost">{cost}</p>
+    </template>
+    <lightning-formatted-rich-text class="item-spa-description" value={description}></lightning-formatted-rich-text>
+</template>

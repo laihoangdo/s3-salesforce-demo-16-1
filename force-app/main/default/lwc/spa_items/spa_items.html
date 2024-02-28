@@ -1,0 +1,21 @@
+<template>
+    <div class="spa-items-banner">
+        <c-banner-image title="SPA ITEMS" sub-title="Spa Experience at Home" image-banner={bannerImg}></c-banner-image>
+    </div>
+    <div class="spa-description">
+        <p class="title">Organic Cosmetics Products</p>
+        <p class="content">Experience the ultimate skin and mind rejuvenation right at the comfort of your own home with our carefully crafted items. Discover our top picks, the Water Lily- insupired line that exudes the serene essens of water, including the aromatic Chiang Mai star diffuser, the silky facial massage oil that leaves your skin irresistibly soft, the Blossom Toning Mist that shields your skin with its toning properties, and the weightless face cream with SPF 15, perfect for daily wear.</p>
+    </div>
+    <div class="spa-items-list">
+        <template for:each={spaItems} for:item="item">
+            <c-item_spa
+              class="item-spa" 
+              key={item.id} 
+              title={item.title} 
+              img={item.img} 
+              cost={item.cost} 
+              description={item.description}
+            ></c-item_spa>
+          </template>
+    </div>
+</template>

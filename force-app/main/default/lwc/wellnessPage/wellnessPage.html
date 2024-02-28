@@ -1,0 +1,44 @@
+<template>
+    <div class="wellness-banner">
+        <c-banner-image title="WELLNESS" sub-title="Experience relaxation amongst nature" image-banner={bannerImg}></c-banner-image>
+    </div>
+    <div class="wellness-page">
+        <div class="wrapper">
+            <hr class="line-top" style="background-color: #b1b1b1; color: #b1b1b1" />
+            <div class="spa">
+                <p class="main-title">THE SPA BY HARNN</p>
+                <p class="sub-title">A STATE OF TOTAL RELAXATION</p>
+                <c-carousel_not_title style="width: 100%;" list={spaSlide}></c-carousel_not_title>
+                <div class="content">
+                    <p class="title">AN AWARD-WINNING SPA</p>
+                    <p>The Spa by HARNN is a prestigious, award-winning spa originally founded in Thailand.</p>
+                    <p>Local ingredients are incorporated into treatments. Experience a higher state of relaxation.</p>
+                    <button>SEE DETAILS</button>
+                </div>
+            </div>
+            <hr class="line-top" style="background-color: #b1b1b1; color: #b1b1b1" />
+            <div class="communal">
+                <p class="main-title">COMMUNAL BATH</p>
+                <p class="sub-title">Welcome to the next level of relaxation</p>
+                <c-carousel_not_title style="width: 100%;" list={communalSlide}></c-carousel_not_title>
+                <div class="content">
+                    <p class="title">Find inner peace and tranquility</p>
+                    <p>When it comes to experiencing nature’s peace and tranquility, there’s nothing quite like the feeling of relaxing in an open-air water bath, sauna, and carbonated spring bath. Throughout the duration of your soak, you can sit back and take in the sounds of rustling leaves and trickling water. As you gently soak, the water envelops you in warmth. You’ll feel completely renewed and refreshed – both physically and mentally.<br>
+                        *Stickers to cover tattoos are available at Front Desk.</p>
+                </div>
+            </div>
+            <hr class="line-top" style="background-color: #b1b1b1; color: #b1b1b1" />
+            <div class="fitness">
+                <p class="main-title">Fitness Centre</p>
+                <p class="sub-title">Keep up with your workout routine</p>
+                <c-carousel_not_title style="width: 100%;" list={fitnessSlide}></c-carousel_not_title>
+                <div class="content">
+                    <p class="title">Reach your fitness goals</p>
+                    <p>NOHrD’s fitness center is open 24/7 and offers the latest equipment that will help you train to your heart’s content. With stylish, innovative machines we know everyone can find an indoor workout they love.</p>
+                    <p>Open 24 hours a day｜ Free access for guests only</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <c-footer-booking-hotel></c-footer-booking-hotel>
+</template>
