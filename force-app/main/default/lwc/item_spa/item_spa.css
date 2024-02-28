@@ -1,0 +1,25 @@
+.item-spa-img{
+    width: 100%;
+    height: auto;
+}
+.item-spa-title, .item-spa-cost{
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: 500;
+    color: rgba(11,42,35,1);
+    text-align: center;
+}
+.item-spa-description{
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: 0;
+    color: rgba(11,42,35,1);
+    text-align: center;
+}
+.item-spa-title{
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+.item-spa-description{
+    margin-top: 10px;
+}
