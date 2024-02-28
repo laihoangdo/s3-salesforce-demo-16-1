@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "820e0b08-86b5-4ff8-bbcd-09396ca0b6dc",
+  "appPageId" : "c9da5475-3c73-47c8-94d9-3c1f15e83f99",
+  "configurationTags" : [ ],
+  "id" : "c261169b-94cd-4eb3-a1f2-0846bfe6a775",
+  "label" : "Meets",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-meets",
+  "type" : "route",
+  "urlPrefix" : "meets"
+}
