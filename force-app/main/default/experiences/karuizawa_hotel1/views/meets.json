@@ -1,0 +1,82 @@
+{
+  "appPageId" : "c9da5475-3c73-47c8-94d9-3c1f15e83f99",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "820e0b08-86b5-4ff8-bbcd-09396ca0b6dc",
+  "label" : "Meets",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "3775bac0-3a6f-4441-b661-f27f67e13d1e",
+          "columns" : [ {
+            "UUID" : "2576c1cb-66b9-4f8d-a521-2d42255bbf5e",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "3775bac0-3a6f-4441-b661-f27f67e13d1e",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : { },
+          "componentName" : "c:roomBanner",
+          "id" : "97f51696-46ac-45f3-bd88-2ba99dbc7d73",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : { },
+          "componentName" : "c:roomPrivateDining",
+          "id" : "e54fe1b2-8726-47ce-bb31-905674b727c3",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : { },
+          "componentName" : "c:roomPrivateLounge",
+          "id" : "b66dbc8d-699d-4fb0-ab91-7d282735e850",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "2576c1cb-66b9-4f8d-a521-2d42255bbf5e",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "b2432ec1-26e0-4120-abb9-8aee364a5ec7",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Meets"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "a058e0fe-06dd-4577-b324-19af61f6459d",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "62b4759a-8c1f-4614-81cc-abe5e2e4d08f",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-meets"
+}
