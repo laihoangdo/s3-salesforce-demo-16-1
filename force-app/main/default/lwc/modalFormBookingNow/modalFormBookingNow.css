@@ -1,0 +1,103 @@
+.active-form{
+visibility: visible !important;
+}
+.active-form .modal {
+    transform: translateX(0) !important;
+  }
+  .modal-booking-now {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 0.2s ease-in-out;
+    z-index: 100000;
+    visibility: hidden;
+  }
+  .modal-booking-now .modal {
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 800px;
+    height: 100%;
+    padding: 0 100px;
+    padding-top: 100px;
+    background-color: rgba(0, 46, 82, 1);
+    transition: all 0.2s ease-in-out;
+    transform: translateX(800px);
+  }
+  .modal .btn-close {
+    top: 40px;
+    right: 40px;
+    position: absolute;
+    --sds-c-icon-color-foreground-default: white;
+    cursor: pointer;
+  }
+  .modal-booking-now .modal button {
+    border: none;
+    background: none;
+  }
+  .modal-booking-now .modal .title-modal {
+    color: white;
+    font-size: 70px;
+    margin-bottom: 50px;
+  }
+  .modal-booking-now .modal .form-item {
+    width: 100%;
+  }
+  .modal-booking-now .modal .form-item .btn-submit {
+    width: 100%;
+    font-size: 15px;
+    height: 50px;
+    color: white;
+    background-color: rgba(156, 191, 184, 1);
+    transition: all 0.1s linear;
+    cursor: pointer;
+  }
+  .modal-booking-now .modal .form-item .btn-submit:hover {
+    background-color: rgba(11, 42, 35, 1);
+  }
+  .modal-booking-now .modal .form-item .form-item-menu {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .modal-booking-now .modal .form-item .form-item-menu p {
+    width: 50%;
+    text-align: center;
+    padding-bottom: 10px;
+    color: gray;
+    cursor: pointer;
+  }
+  .modal-booking-now .modal .form-item .form-item-menu .active-tag {
+    border-bottom: 1px solid white;
+    color: white;
+  }
+  .modal-booking-now .modal .form-item .form-item-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .modal-booking-now .modal .form-item .form-item-content .item-form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .modal-booking-now
+    .modal
+    .form-item
+    .form-item-content
+    .item-form
+    .input-booking-hotel {
+    flex: 1;
+  }
+@media screen and (max-width:1020px) {
+  .modal-booking-now .modal {
+    width: 100%;
+  }
+}

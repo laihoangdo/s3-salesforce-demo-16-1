@@ -3,8 +3,15 @@ import imageBookingHotel from '@salesforce/resourceUrl/imageHeaderBookingHotel'
 export default class HeaderBookingHotel extends LightningElement {
     @track headerBooking = 'header-booking'
     @track menuResponsive = 'menu-responsive'
+    @track showModalBookingNow = false
     bookingClass = 'wrapper-header';
     logoSrc = imageBookingHotel + '/logo-big.png';
+    handleShowModalBookingNow(){
+        this.showModalBookingNow = true
+    }
+    handleCloseModalBookingNow(){
+        this.showModalBookingNow = false
+    }
     handleShowMenu() {
         this.headerBooking = this.toggleClass(this.headerBooking, 'show-header-booking');
         this.menuResponsive = this.toggleClass(this.menuResponsive, 'show-menu');
@@ -39,9 +46,6 @@ export default class HeaderBookingHotel extends LightningElement {
                 this.logoSrc = imageBookingHotel+ '/logo-big.png';
             }
         }
-    }
-    handleClickSubMenu(e){
-        console.log(e);
     }
     disconnectedCallback() {
         window.removeEventListener('scroll', this.handleScroll.bind(this));

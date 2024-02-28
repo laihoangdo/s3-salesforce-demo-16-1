@@ -64,7 +64,7 @@
           </div>
         </nav>
         <nav>
-          <button>BOOK NOW</button>
+          <button onclick={handleShowModalBookingNow}>BOOK NOW</button>
         </nav>
       </div>
     </div>
@@ -82,7 +82,6 @@
           class="booking-hotel-icon"
           icon-name="utility:chevrondown"
           size="x-small"
-          onclick={handleClickSubMenu}
         ></lightning-icon>
       </label>
         <div class="sub-menu">
@@ -107,7 +106,8 @@
         </div>
       </nav>
       <nav>ACCESS</nav>
-      <button>BOOK NOW</button>
+      <button onclick={handleShowModalBookingNow}>BOOK NOW</button>
     </div>
   </div>
+  <c-modal-form-booking-now show={showModalBookingNow} onclose={handleCloseModalBookingNow}></c-modal-form-booking-now>
 </template>
