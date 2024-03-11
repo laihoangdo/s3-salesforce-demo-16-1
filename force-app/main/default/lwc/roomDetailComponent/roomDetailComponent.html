@@ -8,102 +8,33 @@
         <div class="room-detail">
           <div class="room-detail-section">
             <div class="slider-container">
-              <div class="common-slider">
-                  <img
-                  src={imageUrl1}
-                  alt="hotel0-c"
-                  class="slider-item slider-item-noactive"
-                  />
-                  <img
-                  src={imageUrl2}
-                  alt="hotel10-c"
-                  class="slider-item slider-item-active"
-                  />
-                  <img
-                  src={imageUrl3}
-                  alt="hotel20-c"
-                  class="slider-item slider-item-noactive"
-                  />
-              </div>
-  
-              <div class="dotted-detail">
-                <span class="dotted-d active"></span>
-                <span class="dotted-d"></span>
-                <span class="dotted-d"></span>
-              </div>
-  
-              <div class="btn-option">
-                <div class="swiper-btn-left-detail">
-                  <span>
-                    <lightning-icon class="color-white" size="medium" icon-name="utility:chevronleft" title="Approved"></lightning-icon>
-                  </span>
-                </div>
-                <div class="swiper-btn-right-detail">
-                  <span>
-                    <lightning-icon class="color-white" size="medium" icon-name="utility:chevronright" title="Approved"></lightning-icon>
-                  </span>
-                </div>
-              </div>
+              
+              <c-custom_carousel_3_images list={images}></c-custom_carousel_3_images>
             </div>
             <!-- Infor container -->
             <div class="infor-container">
               <div class="infor-section">
                 <div class="heading">
-                  <div class="title">KAGARIBI - PRIVATE DINING SPACE</div>
+                  <div class="title">{title}</div>
                   <div class="specifications">
                     <div class="flex-specification">
                       <div class="capacity">
-                        <span>Capacity : 50</span>
+                        <span>Capacity : {capacity}</span>
                       </div>
                       <div class="line"></div>
                       <div class="size">
                         <div>
-                          Size: <span>120m<sup>2</sup></span>
+                          Size: <span>{size}m<sup>2</sup></span>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="sub-title">
-                    <h3>Exclusive private dining room</h3>
+                    <h3>{sub_title}</h3>
                   </div>
                 </div>
                 <div class="body-content">
-                  <p>Capacity: Up to 50 people</p>
-                  <p>&nbsp;</p>
-                  <p>
-                    Meeting Space Usage: Up to 12 people.
-                    <br />
-                    (Up to 12 people can be seated in the meeting space where the
-                    projector can be seen. Alternatively, the entire space can be
-                    utilised by up to 50 people.)
-                  </p>
-                  <p>&nbsp;</p>
-                  <p>
-                    Usage fee:
-                    <br />
-                    Half day (4 hours) – ¥100,000
-                    <br />
-                    Full day (9:00-18:00) – ¥200,000
-                    <br />
-                    Minimum number of guests: from 20 people
-                  </p>
-                  <p>&nbsp;</p>
-                  <p>
-                    Facilities:
-                    <br />
-                    – 100 inch size screen ※Wireless projection of images from
-                    your screen
-                    <br />
-                    – Transmitter for wireless connection x 1
-                    <br />
-                    – Wireless microphone x2
-                    <br />
-                    – Speaker amplifier
-                    <br />
-                    – 2 whiteboards
-                    <br />
-                    – Wi-Fi
-                  </p>
+                  {description}
                 </div>
               </div>
             </div>

@@ -6,11 +6,12 @@
 
 .intro__content {
   width: 100%;
-  margin: 0 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 0 32px;
+  overflow: hidden;
 }
 
 .intro__content_title{

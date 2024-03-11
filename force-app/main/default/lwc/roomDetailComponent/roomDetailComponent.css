@@ -39,7 +39,6 @@
   .slider-container {
     padding-top: 40px;
     padding-bottom: 24px;
-    height: 550px;
     position: relative;
     
   }
@@ -219,7 +218,7 @@
     border: 1px solid black;
     text-transform: uppercase;
     cursor: pointer;
-    
+    background-color: white;
 }
 
 .btn span {
@@ -246,9 +245,7 @@
     .infor-container {
       padding: 0;
     }
-    .slider-container {
-      height: 300px;
-    }
+
     .slider-item-noactive {
       height: 90%;
       

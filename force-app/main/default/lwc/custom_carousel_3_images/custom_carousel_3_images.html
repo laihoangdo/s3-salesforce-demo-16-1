@@ -1,0 +1,18 @@
+<template>
+    <c-slide_carousel displayed-number="5" able_change_number_displayed="3" list={list} onmounted={mounted} onnext={next} onprev={prev}>
+      <div class="container">
+        <div class="card-hidden"></div>
+        <div class="carousel" lwc:ref="carousel">
+          <article class="card" for:each={displayed} for:item="item" key={item.Id}>
+              <figure class="card__image">
+                <img class="card__image-img" src={item.image_path__c} />
+              </figure>
+          </article>
+        </div>
+      </div>
+    </c-slide_carousel>
+    <article lwc:if={display_content} for:each={content} for:item="content"  class="content" key={content.Id}>
+      <h4>{content.title}</h4>
+      <p>{content.content}</p>
+    </article>
+</template>

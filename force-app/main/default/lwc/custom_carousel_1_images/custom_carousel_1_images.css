@@ -1,9 +1,10 @@
 .carousel{
   display: flex;
   position: relative;
-  min-height: 100vh;
+  align-items: center;
   flex:1;
   overflow: hidden;
+  aspect-ratio: 16/9;
 }
 
 .card__image{
@@ -24,7 +25,6 @@
   margin: 0 auto;
   transform-origin: center;
   transition: .5s all;
-  opacity: 0;
   background-color: #96c0b8;
   display: flex;
   align-items: center;
@@ -47,42 +47,24 @@
 }
 
 .card{
-  width: 60%;
+  width: 100%;
   aspect-ratio: 16/9;
   position: absolute;
   transition: .5s all;
-  transform: translateX(-50%) scale(.8);
-  transform-origin: top;
-  top: 2.1vw
+  transform: translateX(0%) scale(.8);
+
 }
 
 .card:nth-child(1){
-  left: -60%;
+  transform: translateX(-100%);
 }
 
 
 .card:nth-child(2){
-  left: -10%;
+  transform: translateX(0%) scale(1);
 }
 
 .card:nth-child(3){
- left:50%;
- top:0
+  transform: translateX(100%);
 }
 
-.card:nth-child(3) .card__intro{
-  visibility: visible;
-  opacity: 1;
-}
-
-.card:nth-child(3){
-  transform: translateX(-50%) scale(1);
-}
-
-.card:nth-child(4){
-  left:110%
-}
-
-.card:nth-child(5){
-  left: 160%
-}

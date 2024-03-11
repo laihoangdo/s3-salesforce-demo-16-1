@@ -1,8 +1,10 @@
 <template>
   <div class="carousel">
-    <lightning-button-icon lwc:if={displayedButton} icon-name="utility:chevronleft" onclick={prev}></lightning-button-icon>
+    <lightning-icon class="button left" lwc:if={displayedButton} icon-name="utility:chevronleft" onclick={prev}></lightning-icon>
       <slot></slot>
-    <lightning-button-icon lwc:if={displayedButton} icon-name="utility:chevronright" onclick={next}></lightning-button-icon>
+    <lightning-icon class="button right" lwc:if={displayedButton} icon-name="utility:chevronright" onclick={next}></lightning-icon>
   </div>
+
+  
     
 </template>
