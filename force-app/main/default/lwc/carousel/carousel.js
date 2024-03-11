@@ -2,7 +2,7 @@ import { LightningElement, api } from 'lwc';
 
 export default class Carousel extends LightningElement {
 
-  _list
+  _list = []
   @api
   get list(){
     return this._list 
@@ -20,6 +20,7 @@ export default class Carousel extends LightningElement {
   displayedButton = false
 
   fillList(){
+    if(!this._list || !this._list.length) return
     if(this._list.length < this.number_displayed){
       const initialList = [...this._list]
       for(let i = 1; i < 5; i++){
@@ -63,6 +64,8 @@ export default class Carousel extends LightningElement {
   returnCircleDisplayedData() {
     let indexElement = 0
 
+    if(!this._list.length) return []
+
     return Array.from({length: this.number_displayed}).map((_,index)=>{
       if(this.lastIndex - index < 1){
         indexElement += 1
@@ -78,6 +81,7 @@ export default class Carousel extends LightningElement {
       return this.returnCircleDisplayedData()
     }else{
 
+      if(!this._list.length) return []
       return Array.from({length: this.number_displayed}).map((_,index)=> this.specifyElement(index,this._list[this.lastIndex-1-index])).reverse()
     }
   }

@@ -1,9 +1,8 @@
 import { LightningElement, api } from 'lwc';
 
-export default class Neighborhood_carousel extends LightningElement {
+export default class Custom_carousel_1_images extends LightningElement {
   @api list
   displayed=[]
-
   returnCarousel(){
     return this.refs.carousel
   }

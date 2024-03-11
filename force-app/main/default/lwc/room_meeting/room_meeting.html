@@ -1,0 +1,45 @@
+<template>
+  <main class="container" for:each={meetings} for:item="meeting" key={meeting.Id}>
+      <!-- silder 1 -->
+      <div class="container__child">
+        <div class="flex-container">
+          <div class="left-content">
+            <h1>{meeting.title__c}</h1>
+            <h3>{meeting.sub_title__c}</h3>
+            <div class="group-icon">
+              <div class="group-icon__child">
+                <div class="user__detail">
+                  
+                      <lightning-icon size="x-small" icon-name="utility:people" title="Approved"></lightning-icon> 
+                 
+                  <span class="user__detail-content">{meeting.capacity__c}</span>
+                </div>
+                <div class="user__detail-middle"></div>
+                <div class="user__detail">
+              
+                      <lightning-icon size="x-small" icon-name="utility:expand" title="Approved"></lightning-icon>
+              
+                  <span class="user__detail-content">{meeting.size__c}m<sup>2</sup></span>
+                </div>
+              </div>
+            </div>
+            <div class="paragraph">
+              <p>
+                {meeting.introduction__c}
+              </p>
+            </div>
+            <!-- <div class="group-btn">
+              <div class="btn">
+                <span>See details</span>
+              </div>
+            </div> -->
+            <c-room-detail-component images={meeting.images} title={meeting.title__c} sub_title={meeting.sub_title__c} size={meeting.size__c} capacity={meeting.capacity__c} description={meeting.description__c}></c-room-detail-component>
+          </div>
+          <div class="right-content">
+            <c-custom_carousel_1_images list={meeting.images}></c-custom_carousel_1_images>
+          </div>
+        </div>
+      </div>
+      <!-- Detail -->
+    </main>
+</template>
