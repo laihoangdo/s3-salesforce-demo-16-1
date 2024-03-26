@@ -12,7 +12,7 @@
       </div>
     </c-slide_carousel>
     <article lwc:if={display_content} for:each={content} for:item="content"  class="content" key={content.Id}>
-      <h4>{content.title}</h4>
-      <p>{content.content}</p>
+      <h4>{content.title__c}</h4>
+      <p>{content.content__c}</p>
     </article>
 </template>

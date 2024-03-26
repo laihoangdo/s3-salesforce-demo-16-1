@@ -1,0 +1,6 @@
+<template>
+    <c-hero title={heroPage.title__c} sub_title={heroPage.sub_title__c} description={heroPage.description__c} image={heroPage.image_path__c}></c-hero>
+    <c-intro for:each={neighborhoodIntroductions} for:item="neighbor" key={neighbor.Id} title={neighbor.title__c} description={neighbor.sub_introduction__c}>
+        <c-custom_carousel_3_images style="width: 100%;" list={neighbor.articles} display_content="true"></c-custom_carousel_3_images>
+    </c-intro>
+</template>
